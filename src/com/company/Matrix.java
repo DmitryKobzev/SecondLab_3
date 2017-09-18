@@ -46,7 +46,7 @@ public class Matrix {
     }
     }
 
-    public void Task()throws Exception{
+    public void Task(){
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 sum_first[i]+=arr[i][j]*arr[i][j];
