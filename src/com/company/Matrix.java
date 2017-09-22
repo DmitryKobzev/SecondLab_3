@@ -3,18 +3,18 @@ import java.util.Scanner;
 
 public class Matrix {
     int n,m;
-    int [][]arr;
-    int []sum_first;
-    int []sum_second;
+    double [][]arr;
+    double []sum_first;
+    double []sum_second;
     boolean b=true;
 
     public Matrix(int m,int n)throws Exception{
         if(n<0 || m<0){
             throw new Exception("Error!!!n,m-натуральное число");
         }
-        arr=new int [m][n];
-        sum_first=new int [n];
-        sum_second=new int [m];
+        arr=new double [m][n];
+        sum_first=new double [n];
+        sum_second=new double [m];
     }
 
     public void SetMatrix(){
@@ -22,7 +22,7 @@ public class Matrix {
         System.out.println("Введите элементы матрицы:");
         for(int i=0;i<arr.length;i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j] = input.nextInt();
+                arr[i][j] = input.nextDouble();
             }
         }
     }
